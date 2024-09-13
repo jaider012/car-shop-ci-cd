@@ -38,7 +38,7 @@ RUN yarn install --production --frozen-lockfile
 COPY --from=builder /usr/src/app/dist ./dist
 
 # Expose the port the app runs on
-EXPOSE 8080
+EXPOSE 3000
 
 # Command to run the application
 CMD ["node", "dist/main"]
