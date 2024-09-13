@@ -32,32 +32,16 @@ export class CarService {
       year: 2017,
       price: 15000,
     },
+    {
+      id: 4,
+      make: 'LEXUS',
+      model: 'Elantra',
+      year: 2017,
+      price: 153300,
+    },
   ];
-
   getAllCars(): Car[] {
-    return [
-      {
-        id: 1,
-        make: 'Toyota',
-        model: 'Corolla',
-        year: 2018,
-        price: 18000,
-      },
-      {
-        id: 2,
-        make: 'Ford',
-        model: 'Fusion',
-        year: 2019,
-        price: 22000,
-      },
-      {
-        id: 3,
-        make: 'Hyundai',
-        model: 'Elantra',
-        year: 2017,
-        price: 15000,
-      },
-    ];
+    return this.cars;
   }
 
   getCarById(id: number): Car | undefined {
